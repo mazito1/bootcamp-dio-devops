@@ -1,0 +1,9 @@
+services:
+  apache:
+    container_name: apache-html
+    image: httpd:latest
+    ports:
+    - "80:80"
+    volumes:
+    - ./aika_files:/usr/local/apache2/htdocs
+
